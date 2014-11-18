@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Collabco.Waltham.PeopleDirectory.MyPeopleDirectory.MyPeopleDirectory, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">My People Directory</property>
+        <property name="Description" type="string">My people directory allows you to search for staff contact information</property>
+        <property name="CatalogIconImageUrl" type="string">_layouts/15/collabco/icons/sso16.gif</property>
+        <property name="ChromeType" type="chrometype">None</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

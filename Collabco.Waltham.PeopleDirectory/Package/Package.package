@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="fc54038b-2c13-49f0-b1b8-9ecb4b3ba2e3" solutionId="fc54038b-2c13-49f0-b1b8-9ecb4b3ba2e3" resetWebServer="false" sharePointProductVersion="15.0" name="Collabco.Waltham.PeopleDirectory" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="8f722b2d-5b7a-472d-bf4a-99d83b15b2b7" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="633105a7-6a16-44e9-a176-9eb01251dcdc" />
+  </projectItems>
+</package>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CFDD2148-E8CC-4346-8C13-27C625206C89}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Collabco.Waltham.PeopleDirectory</RootNamespace>
+    <AssemblyName>Collabco.Waltham.PeopleDirectory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="collabco.hub.webparts, Version=3.0.0.0, Culture=neutral, PublicKeyToken=626188aa9c54d824, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\collabco.hub.webparts\v4.0_3.0.0.0__626188aa9c54d824\collabco.hub.webparts.dll</HintPath>
+    </Reference>
+    <Reference Include="Collabco.Saturn, Version=3.0.0.0, Culture=neutral, PublicKeyToken=51926656f6255889, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\Collabco.Saturn\v4.0_3.0.0.0__51926656f6255889\Collabco.Saturn.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.Office.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Server.UserProfiles, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\15\ISAPI\Microsoft.Office.Server.UserProfiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layouts\Collabco.Waltham.PeopleDirectory\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Collabco.Waltham.PeopleDirectory\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Layouts\Collabco.Waltham.PeopleDirectory\SearchSettings.aspx.cs">
+      <DependentUpon>SearchSettings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layouts\Collabco.Waltham.PeopleDirectory\SearchSettings.aspx.designer.cs">
+      <DependentUpon>SearchSettings.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPeopleDirectory\MyPeopleDirectory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserProfileUtility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\PeopleDirectory\PeopleDirectory.feature">
+      <FeatureId>{8f722b2d-5b7a-472d-bf4a-99d83b15b2b7}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{633105a7-6a16-44e9-a176-9eb01251dcdc}</SharePointProjectItemId>
+    </None>
+    <None Include="MyPeopleDirectory\MyPeopleDirectory.webpart" />
+    <None Include="MyPeopleDirectory\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7fa6028f-ed3f-4a81-99d6-ab8a45762dd7}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{fc54038b-2c13-49f0-b1b8-9ecb4b3ba2e3}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SearchElements\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{000030ea-00c4-403e-9f1f-1509552ac4f6}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\PeopleDirectory\PeopleDirectory.Template.xml">
+      <DependentUpon>PeopleDirectory.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\Collabco.Waltham.PeopleDirectory\Search.aspx" />
+    <Content Include="Layouts\Collabco.Waltham.PeopleDirectory\SearchSettings.aspx" />
+    <Content Include="Layouts\Collabco\css\tile.pds.debug.css" />
+    <Content Include="Layouts\Collabco\icons\toolbar_find.png" />
+    <Content Include="Layouts\Collabco\js\tile.pds.debug.js" />
+    <Content Include="MyPeopleDirectory\Elements.xml" />
+    <Content Include="SearchElements\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

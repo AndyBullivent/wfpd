@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="MyPeopleDirectory" List="113" Url="_catalogs/wp">
+    <File Path="MyPeopleDirectory\MyPeopleDirectory.webpart" Url="Collabco.Waltham.PeopleDirectory_MyPeopleDirectory.webpart" Type="GhostableInLibrary">
+      <Property Name="Group" Value="MyDay Tiles" />
+    </File>
+  </Module>
+</Elements>

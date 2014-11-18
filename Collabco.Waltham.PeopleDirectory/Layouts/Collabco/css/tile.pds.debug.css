@@ -1,0 +1,96 @@
+﻿.hubtile-pds {
+    background: #00497c;
+}
+
+#pds {
+    width: 230px;
+    /*background: #598162;*/
+    position: relative;
+    margin-top: 10px;
+}
+
+#pds h1 {
+    color: #f0f4f1;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+#pds .attenSlider_container {
+    width: 220px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.attenSlider {
+    width: 130px; /*160px*/
+    background: #cdd9d0;
+    height: 8px;
+    float: left;
+}
+
+.attenSliderFill {
+    width: 80%;
+    background: #f0f4f1;
+    height: 8px;
+}
+
+.attenSliderFill2 {
+    width: 67%;
+    background: #f0f4f1;
+    height: 8px;
+}
+
+#pds .attenSlider_container h5.percentage {
+    color: #FFFFFF !important; /*#F0F4F1*/ /*changed by Alex 20131026*/
+    float: left;
+    margin: -4px 0px 0px 0px;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+}
+#pds .hubtiletitle{
+    visibility:hidden;
+}
+#pds .attenSlider_container{
+    align-content:center;
+}
+
+#pds .attenSlider_container h5 {
+    margin-left: 0px;
+    padding-top: 10px;
+}
+
+#pds .attenSlider_container h5.sliderTitle {
+        color: #FFFFFF !important; /*added by Alex 20131026*/
+        padding-top: 0px;
+    }
+
+.sliderTitle {
+    margin-bottom: 5px;
+    font-size:large;
+}
+
+.sprite-pds_static {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAxCAYAAABznEEcAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPmSURBVGhD7Zk/SFVRGMB9D4cGh4Y3OAQZOBg4GAg1NCjY1tDQ0BIYueXgoLQUuASBg4NDhEOBDkJEQUOEgw6FBoJChoFCQ0GCQYKCQ2L9vnO+e/W9d/+8e9+xe4n7g8/vO+d+5zvfuefdc8+5thQUFPx/lFTXcXR01I3qQSqlUmkFvYbel2u5h+RHkb0/AVD/ClVR1/xBgueQBZtuOPjsINe1WX4gt1YSW7JpxoPvb5T81PIDSY3a9BqHNquoVg2RLSTSRkIHJrOE0G5Iw2RKGelh1Tlji4m5rDpTytzQXrXT0ExbZ8hMnLdmKjpUZ4oM4rM1U7GuOlPK+jZOSzNtnSEzsc5z8d0WE/NOdfYwiAFZMpPA8jqjzfMDSU1pfrHg+w11VpvmC5IbQSJffFx/g8rvJlAgwS4SnUE+mawBWzZ9kvygup0K9DGBDCO99OVmS0OgNqRdi6cK/dxAfBjIAbKETCK3kE51rSP0UPSvkYRZ7q9oMRDG9hO1jHxEVvBfRnarBoFTF3IPU4J1y56K8hb2GvKyXC7PoZ1DH32oBVsy5W36foreR0viHvIqOBTjxLXj1wN3Qn6LgSc6D67Locn5VoO4b20PFsojeqkhzEzQaIhRTZuaGOhD7lI/8kWrmoJ4crhatSU//gVM+RVM2tpIdqVRR9wM1IL/D5STB55YL2xUizcLmOO2JpZxCTKhhUTQbgPV1AuPGJ2IHHUN2HJzZAYq2L9MZQTqc1YCzduq5NBWnpHU6zntp20kC2UzC+hJrYoEv1EvUOyIo6D9MxMoITRtp62/O8DeRMksVNWHgY+ZNS9Y0xBw2ARLAG1q77bZDQTUB4Kfv4KVpELt1BDikBXlGrKoVQY66qTuKqa/vsO2/KGNvNzMM4W9hX0Rs4L9FTvyzO/5IzYmFU4g4R1U1TuE8qC5GI83C0+0HEf1Hk4rnUAS8i2qTUNLUiP2Sjj4yLMgH++qVqowPH/twiAnO2cwvT10MKVFKccuwfg80p/FfXTsSofPmPr7OHkmArhDR88JLW/juM+ds5IUd1i+wstz4s9kLcRbY/92SYvHyCBcQ0J78vPQLhqGNjc1RCBcD/yQfVozITdHdr/vbSkU+X/Hh5O7YxLdZDbqbgDxFvHr12I1MoisIXH/owP2A62uRbbrwahDU9Bx7KoSBzHMgQizz9Ycw7V5k2wITlYnpv+hmqkhRpeadSsU18bUDMTVIB5zw6re1kmhvfkkivYGY6D8mvhysgzFyYNNJxKnA9nATPxvAtrN8tDeVnsAJVsVjzliRh7ApPNxtVNDJyYGv11ZVe4ijR6Y6langoKCAmhp+Qt1aYXUBNU47wAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    display: block;
+    width: 49px;
+    height: 49px;
+}
+
+.sprite-pds_small {
+   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH8SURBVEhL7ZUhTwNBEEbvLoiKigoEAlGSCgSiEgcCQ4KowSPq4QeQAA5XAR6BRECCRBACSetKgoQEEkggQYBAlND0eN/uQA/a0jaHg5d8zOzM3Oxub28J/klFHMeZVqtVQbf4MfYClS39O9B3hKanmuA7xFetLD00W7G+HZB7QwUrTUWEZrzbSRiGI5hZP0qHJsp4tydZs6nQROfe7UnNbDp4FaO8B3favkN8z8p+B3pO0rTq23sYb2EG/tmozQxcT6F2Nz3MBB/wnL5DndK6LXIJO2XpINQfAuOYZVREL+iEE7eNmvh9oekYuqZeu9rEvhK+8dngGdVCEpOoSjLn4x5iZ8TmkSb+EWrXMWvYA+o38Esu0aah3RxS0BVyujH0LfWEfJa6J/dAHBfxj83/hFhFEz3auCvkd61nV8i7mwW7j5mVn4S4FpHTigZBP40DP4fyEk0K6F4FoN3UzU/in7VBX2iyYPXrPtKGnHZT8qM2xP1uhpxID2knOrbHSRHTbnZUl4TYipsEdOpi8/tCqa6rRU5W8tg3GD+Qy6JL/DEF8R/wJ1DDVRFIDSs/Ui+sPlRHcjdCl2pfeO7A3K6w6jlq9LG71eNfEduW/4lmHwBdTR+nqwNyuif1n7qMdpA7OEn0jvLm94TV3agRrq6qLxBvRlF0Z8M/QxC8AxwsVydp0rQ3AAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    display: block;
+    width: 26px;
+    height: 26px;
+}
+
+/* 20131016 kamil burek */
+.hubmodal-pds .header { background: #ffffff; }
+.hubmodal-pds { background: #598061; border: 5px solid #598061; }
+.hubmodal-pds .header { background: none repeat scroll 0 0 #598061; }
+.hubmodal-pds table td:first-child { padding-right: 30px; }

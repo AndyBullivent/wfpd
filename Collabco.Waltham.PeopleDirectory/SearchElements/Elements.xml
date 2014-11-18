@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+
+  <CustomAction
+    Id="PeopleDirectorySettings"
+    GroupId="Myday"
+    Location="Microsoft.SharePoint.SiteSettings"
+    Description="People Directory Search Settings Page"
+    Title="People Directory Search Settings"
+    RequireSiteAdministrator="TRUE"
+    >
+    <UrlAction Url="~site/_layouts/15/Collabco.Waltham.PeopleDirectory/SearchSettings.aspx"/>
+  </CustomAction>
+</Elements>
